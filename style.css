@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: black;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  }
+  
+  
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  animation: moveUp 3s ease-in-out infinite;
+}
+
+.logo img:hover {
+ animation: moveup 0.60s ease-in-out infinite ;
+}
+
+.btn {
+  text-align: center;
+  margin-top: -30px;
+}
+
+
+
+input[type="button"] {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 120px; 
+  box-sizing: border-box; 
+  transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #ffffff;
+  color: #000000;
+  text-shadow: #ffffff;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #000000, 0 0 70px #000000, 0 0 80px #000000, 0 0 100px #000000;
+}
+
+
+@keyframes moveup {
+  0%, 100% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .logo img {
+    margin-bottom: 20px;
+  }
+  
+  .btn1 {
+    right: 5%;
+  }
+  
+  input[type="button"] {
+    padding: 8px;
+    font-size: 14px;
+    margin: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo img {
+    max-width: 500px; /* Change this value as per your requirement */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    max-width: 500px; /* Change this value as per your requirement */
+  }
+}
